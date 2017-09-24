@@ -6,9 +6,13 @@
 Particle::Particle(){
 }
 
-Particle::Particle(float xPos= 400,float yPos= 400,float xVel= 0,float yVel= 0)
-    : xPosition(xPos), xPosition(yPos), xVelocity(xVel), yVelocity(yVel), dead(false)
-{}
+Particle::Particle(float xPos= 400,float yPos= 400,float xVel= 0,float yVel= 0) {
+    float xPosition = xPos;
+    float yPosition = yPos;
+    float xVelocity = xVel;
+    float yVelocity = yVel;
+    bool dead = false;
+}
 
 void Particle::Advance(){
     xPosition += xVelocity;
